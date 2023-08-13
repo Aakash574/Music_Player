@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:musicplayer/src/presentation/view/list_of_music.dart';
+import 'package:musicplayer/src/config/router/routes.dart';
+import 'package:musicplayer/src/presentation/view/splash/splash.dart';
 import 'package:musicplayer/src/utils/constant/Containers/gradient.dart';
 
 void main() {
@@ -15,6 +16,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
+      routes: routes,
+      // initialRoute: '/',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
@@ -41,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
           gradient: customGradient,
         ),
         child: const Center(
-          child: ListOfMusicPlayer(),
+          child: SplashScreen(),
         ),
       ),
     );
