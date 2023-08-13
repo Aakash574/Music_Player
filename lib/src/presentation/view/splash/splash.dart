@@ -31,13 +31,9 @@ class _SplashScreenState extends State<SplashScreen>
       ),
     );
     log("After 3 Seconds");
-
-    // Navigator.push(
-    //   context,
-    //   MaterialPageRoute(
-    //     builder: (context) => const MusicPlayer(),
-    //   ),
-    // );
+    log("After 3 Seconds");
+    log("After 3 Seconds");
+    log("After 3 Seconds");
   }
 
   @override
